@@ -7,4 +7,9 @@ add_library(TcpBridge SHARED
     src/TcpBridge.cpp
 )
 
+set_target_properties(TcpBridge PROPERTIES
+    PREFIX ""
+    OUTPUT_NAME "TcpBridge"
+)
+
 target_link_libraries(TcpBridge ws2_32)
